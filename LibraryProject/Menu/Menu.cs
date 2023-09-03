@@ -78,7 +78,7 @@ namespace LibraryProject.Menu
 
             var lend = libraryService.BorrowBookFromLibrary(isbn);
 
-            Console.WriteLine($"You have borrowed {lend.Book.Title} from {lend.StartDate.Date}");
+            Console.WriteLine($"You have borrowed {lend.Book.Title} from {lend.StartDate}");
         }
 
         private void ReturnBook()
