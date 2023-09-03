@@ -27,8 +27,7 @@ namespace LibraryProject.Menu
 
         public void RunMenu()
         {
-            var menuIsRunning = true;
-            while (menuIsRunning)
+            while (true)
             {
                 try
                 {
@@ -53,7 +52,7 @@ namespace LibraryProject.Menu
                             ReturnBook();
                             break;
                         case 6:
-                            menuIsRunning = false;
+                            Environment.Exit(0);
                             break;
                         default:
                             {
@@ -67,6 +66,7 @@ namespace LibraryProject.Menu
                     Console.WriteLine(ex.Message);
                 }
             }
+
             Environment.Exit(0);
         }
 
